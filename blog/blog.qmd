@@ -1,0 +1,97 @@
+---
+title: "Predicting House Prices: How Data Science Can Help You Understand the Housing Market?"
+author: "Tianjiao Jiang"
+format:
+  html:
+    toc: true
+    toc-depth: 3
+  pdf:
+    toc: true
+    toc-depth: 3
+execute:
+  echo: false
+  warning: false
+---
+
+## **Predicting House Prices: How Data Science Helps You Understand the Housing Market**
+
+Buying a house is a big decision to make in everyone's life. It takes a significant amount of money and you might even need to take a loan for which you need to work for several years to repay. Therefore it is important that you make sure the house you intended to buy is worthy! One of the first questions that comes up in your mind when you consider a house is: **How much is this house really worth?**
+
+Well, imagine if there's a way to predict the price for it before you even see the listing. Sounds cool, right? Thanks to the tool in data science called **Ridge Regression**, we can actually make pretty good guesses about house prices using data we already know.
+
+In this blog, we’ll take a closer look at how Ridge Regression works and how data scientists use it to predict house prices. Whether you’re just curious or starting to dive into the world of data science, we’ll keep things simple and fun!
+
+------------------------------------------------------------------------
+
+### **So, What Exactly Is Ridge Regression?**
+
+At its core, Ridge Regression is like a smart calculator. It looks at lots of houses, sees what they have in common, like size, number of bedrooms, or whether they have a fireplace, and then uses the information to guess the price of a new house.
+
+Think of it like this: imagine you’re trying to guess the price of a toy. You know that bigger toys, like big trucks, tend to worth more money. On the other hand, small toys with less functions are usually cheaper. Ridge Regression works in a similar way for houses. It looks at their features and uses that to predict how much the house would cost.
+
+------------------------------------------------------------------------
+
+### **How Does It Actually Work?**
+
+Let’s say you’ve got a collection of toys, and you want to figure out how much each one is worth. You might start to notice patterns—like larger toys being worth more. Ridge Regression works the same way, but with houses.
+
+It takes a bunch of features, like: - **How big the house is** (measured in square meters), - **If there’s a garage** or not, and - **If there’s a fireplace** or some other special feature.
+
+Then, it looks for patterns in those features to guess how much a house might cost.
+
+What makes Ridge Regression unique is that it’s **really good at handling a lot of features at once**, without getting “too caught up” in one specific detail. For example, a large house might cost more, but if it also has a huge backyard or a super nice kitchen, it could be even more expensive. Ridge Regression helps balance all of these factors and come up with a pretty solid guess.
+
+Using our model, the predicted result is as below. As you can see, with basic information for the house listed in the first 5 columns, we are able to predict the housing price. How interesting is that!
+
+![](images/paste-6.png){width="697"}
+
+------------------------------------------------------------------------
+
+### **The Data: What We Looked At**
+
+To test this model, we used a dataset from **Strathcona County**, which contains information about different houses, like:
+
+-   **Meters**: The size of the house in square meters.
+-   **Garage**: Whether or not the house has a garage.
+-   **Fireplace**: Whether it has a fireplace or not.
+-   **Building Evaluation**: Whether the house has been recently evaluated.
+
+We looked at how these features affected house prices. According to the figure below, we noticed that larger houses tend to cost more, and houses with a garage or a fireplace are also tend to be more expensive.
+
+![](images/paste-3.png){width="614"}
+
+But it’s not just about size or amenities; Ridge Regression helps us pull all of this information together to make more accurate predictions about a house’s price. Table 1 below shows the first few rows of the dataset.
+
+![](images/paste-1.png){width="611"}
+
+------------------------------------------------------------------------
+
+### **Why Does This Matter?**
+
+You might be wondering: **Why is all of this important?** Well, understanding how to predict house prices with data has a huge impact on the real world:
+
+-   **Buyers** can make better, more informed decisions about what they’re willing to pay for a house.
+-   **Sellers** can set a fair price for their homes, making it more likely to sell.
+-   **Cities and governments** can use this kind of data to make sure homes are affordable and plan for future growth.
+
+And it's not just about houses. The techniques that help us predict housing prices can also be applied to other things like **stock prices**, **project costs**, and even things like **weather forecasts**!
+
+------------------------------------------------------------------------
+
+### **What’s Next for Data Science in the Housing Market?**
+
+As data science continues to evolve, predictive models like Ridge Regression are getting even smarter. In the future, we’ll likely include more data—like the number of bedrooms, the year the house was built, or even how close the house is to schools or parks. The more data we have, the better our predictions become.
+
+The figure below shows how accurate our model is. We can see that the even though model is not perfect, but it's better than nothing! If you do not have any clue about what the price the house would be at, Using Ridge Regression can be a good starting point.
+
+![](images/paste-4.png){width="610"}
+
+So, whether you’re just starting to explore data science or are already diving deep into the field, this is just the beginning. The world of predictions is expanding, and there’s so much more to discover.
+
+------------------------------------------------------------------------
+
+### **Key Takeaways**
+
+-   Predicting house prices is like guessing the value of a toy collection—looking at different features helps you figure out the price.
+-   **Ridge Regression** is a tool that helps us make predictions by looking at key features of houses and adjusting for how they might relate to each other.
+-   Predicting house prices isn’t just fun. This data science technique can be applied to a whole range of areas, like economics, finance, health care, and even entertainment!
